@@ -40,15 +40,15 @@ class MainActivity : AppCompatActivity() {
         binding.scoreBoard.text = getString(R.string.score, score)
     }
 
-    fun setBtn(nextBtn: Int) {
-        for (i: Int in numArray.indices) {
-            if (i == nextBtn) {
-//                numArray[i].background =
-            } else {
-//                numArray[i].background = AppCompatResources.getDrawable(this, R.drawable.num_btn)
-            }
-        }
-    }
+//    fun setBtn(nextBtn: Int) {
+//        for (i: Int in numArray.indices) {
+//            if (i == nextBtn) {
+////                numArray[i].backgro und =
+//            } else {
+////                numArray[i].background = AppCompatResources.getDrawable(this, R.drawable.num_btn)
+//            }
+//        }
+//    }
 
     private val clickListener = View.OnClickListener { view ->
         for (i in numArray.indices) {
@@ -56,7 +56,7 @@ class MainActivity : AppCompatActivity() {
                 if (i == PI[score].code - '0'.code) {
                     str += i.toString()
                     score += 1
-                    setBtn(PI[score].code - '0'.code)
+//                    setBtn(PI[score].code - '0'.code)
                     if (score == 1) {
                         str += '.'
                     }
